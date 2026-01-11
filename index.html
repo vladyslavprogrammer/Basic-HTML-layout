@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="example for make layout in html">
+    <meta name="Frontend Developer">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Developer</title>
+</head>
+<body class="border">
+    <style>
+        .navbar {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+            padding: 10px;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        .navbar li{
+            padding-right: 15px;
+        }
+
+        .navbar li::after {
+            content: " /";
+        }
+
+        .navbar li:last-child::after {
+            content: none;
+        }
+
+        .your-name{
+            float: left;
+        }
+        
+        img{
+            float: left;
+        }
+
+        .text-in-header{
+            text-align: center;
+        }
+        .border{
+            border: 1px;
+            border-color: black;
+            border-style: solid;
+        }
+        aside{
+            width: 25%;
+            float: left;
+        }
+
+        .side{
+            padding-left: 10px;
+        }
+
+        #side-special{
+            padding-left: 10px;
+            margin-bottom: 212px;
+        }
+
+        .main-content{
+            padding-left: 10px;
+        }
+        
+
+        .main{
+            border: 1px;
+            border-color: black;
+            border-style: solid;
+            width: 35%;
+            float: left;
+            height: 200px;
+        }
+
+        .main2{
+            border: 0px;
+            border-bottom: 1px;
+            border-color: black;
+            border-style: solid;
+            width: 100%;
+            float: left;
+            height: 319px;
+            margin-top: 40px;
+        }
+        .education{
+            border: 1px;
+            border-color: black;
+            border-style: solid;
+            width: 39.5651%;
+            float: right;
+            height: 520px;
+        }
+
+        .text-edu{
+            padding-left: 10px;
+        }
+
+        footer{
+            border: 1px;
+            border-bottom: 0px;
+            border-color: black;
+            border-style: solid;
+            display: flex;
+            float: left;
+            width: 100%;
+        }
+
+        .revievs{
+            border: 1px;
+            border-style: solid;
+            border-radius: 30px;
+            padding-left: 10px;
+            margin-top: 50px;
+            width: 100%;
+            margin-right: 100px;
+            margin-bottom: 200px;
+        }
+
+        .revievs-text{
+            float: left;
+            width: 100%;
+            padding-left: 10px;
+        }
+
+        .by-professor{
+            color: grey;
+        }
+
+        .copy{
+            display: flex;
+            width: 100%;
+            margin-left: 45%;
+            text-align: center;
+        }
+    </style>
+
+    <header>
+        <img src="square.png" alt="logo" width="20px">
+        <p class="your-name">your name</p>
+        <nav class="navbar">
+            <ul>
+                <li>Home</li>
+                <li>Projects</li>
+                <li>Articles</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+
+        <div class="text-in-header">
+            <h1>Frontend Developer</h1>
+            <p>html only proper layout, no styling</p>
+        </div>
+    </header>
+
+    <main>
+        <aside>
+            <div class="border">
+                <h3 class="side">Projects</h3>
+                <p class="side">HTML Only Portfolio</p>
+            </div>
+            <div class="border"><p class="side">Calculator</p></div>
+            <div class="border"><p class="side">Quiz App</p></div>
+            <div class="border"><p class="side">Countdown Timer</p></div>
+            <div class="border"><p id="side-special">Product Uncomming Page</p></div>
+        </aside>
+
+        <div class="main">
+            <h3 class="main-content">Work Experience</h3>
+
+            <p class="main-content">roadmap.sh</p>
+            <p class="main-content">Solved all the frontend projects</p>
+            <a class="main-content" href="#">Visit my site</a>
+            
+            <div class="main2">
+                <h3 class="main-content">Opensource Work</h3>
+                <p class="main-content">Contributed to 50 opensorce projects. Made my own projects with 200 GitHub Stars.</p>
+                <a class="main-content" href="#">Visit my site</a>
+            </div>
+        </div>
+        
+
+        <div class="education">
+            <h3 class="text-edu">Education</h3>
+            <p class="text-edu">Graduatred with 3.76 out of 4 CGPA. Won Acme Hackathon. Organize 30 sessions.</p>
+
+            <p class="text-edu">
+                Courses I took:
+            </p>
+            <p class="text-edu">- Object Oriented Programming</p>
+            <p class="text-edu">- Data Structures and Algorithms</p>
+            <p class="text-edu">- Web Engineering</p>
+            <p class="text-edu">- Artificail Intelligence</p>
+            <p class="text-edu">- Human Computer Interaction</p>
+            <p class="text-edu">- Computer Graphics</p>
+            <p class="text-edu">- Database Management Systems</p>
+            <p class="text-edu">- Distributed Database Systems</p>
+            <p class="text-edu">- Discreet Mathematics</p>
+        </div>
+    </main>
+
+    <footer>
+        <h3 class="revievs-text">Revievs from my Teacher</h3>
+
+        <div class="revievs"><p>John Doe was a brilliant student; always stood out with his assigments.</p>
+        <p class="by-professor">Jane Doe <br>Assistasnt Professor</p></div>
+        <div class="revievs"><p>John Doe was a brilliant student; always stood out with his assigments.</p>
+        <p class="by-professor">Jane Doe <br>Assistasnt Professor</p></div>
+        <div class="revievs"><p>John Doe was a brilliant student; always stood out with his assigments.</p>
+        <p class="by-professor">Jane Doe <br>Assistasnt Professor</p></div>
+    </footer>
+    <center><p class="copy">&copy; all rights reserved 2025</p></center>
+</body>
+</html>
